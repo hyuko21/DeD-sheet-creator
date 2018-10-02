@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>D&D sheet generator</title>
+  </head>
+  <body>
+      <div class="form-group col-sm-6">
+        <label for="email">Nome do seu personagem</label>
+        <input type="name" class="form-control" id="charName">
+      </div>
+      <div>
+         <div class="form-group col-sm-6">
+          <label for="exampleFormControlSelect1">Selecione a classe</label>
+          <select class="form-control">
+            <option>Mago</option>
+            <option>Guerreiro</option>
+            <option>Ladino</option>
+           
+          </select>
+        </div>
+      </div>
+    
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

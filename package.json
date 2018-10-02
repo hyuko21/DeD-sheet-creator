@@ -1,0 +1,16 @@
+{
+  "name": "DeD-sheet-creator",
+  "version": "0.0.1",
+  "description": "it's a sheet generator for D&D RPG system ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/dacostajose/DeD-sheet-creator.git",
+  "author": "José da Costa Filho",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "electron": "^3.0.2"
+  }
+}

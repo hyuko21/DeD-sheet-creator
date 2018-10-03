@@ -12,5 +12,6 @@
   "private": false,
   "devDependencies": {
     "electron": "^3.0.2"
-  }
+  },
+  "dependencies": {}
 }

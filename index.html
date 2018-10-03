@@ -6,26 +6,88 @@
     <link rel="stylesheet" href="./styles.css">
 
     <title>D&D sheet generator</title>
+    <script type="text/javascript">
+      function AlteraValorDoHidden(){
+        document.getElementById('charForce').value = Math.floor(Math.random() * (20) + 5);
+        document.getElementById('charDest').value = Math.floor(Math.random() * (20) + 5);
+        document.getElementById('charConst').value = Math.floor(Math.random() * (20) + 5);
+        document.getElementById('charInt').value = Math.floor(Math.random() * (20) + 5);
+        document.getElementById('charSab').value = Math.floor(Math.random() * (20) + 5);
+        document.getElementById('charCaris').value = Math.floor(Math.random() * (20) + 5);
+
+      }
+      
+      
+    </script>
   </head>
   <body>
+     <div class="row">
       <div class="form-group col-sm-6">
-        <label for="email">Nome do seu personagem</label>
+        <label for="charName">Nome do seu personagem</label>
         <input type="name" class="form-control" id="charName">
       </div>
-      <div>
-         <div class="form-group col-sm-6">
-          <label for="exampleFormControlSelect1">Selecione a classe</label>
-          <select class="form-control">
-            <option>Mago</option>
-            <option>Guerreiro</option>
-            <option>Ladino</option>
-           
-          </select>
-        </div>
+      <div class="form-group col-sm-6">
+         <label for="exampleFormControlSelect1">Selecione a classe</label>
+         <select class="form-control" id="exampleFormControlSelect1">
+           <option>Mago</option>
+           <option>Guerreiro</option>
+           <option>Ladino</option>
+         </select>
       </div>
+     </div>
+
+      <div class="row">
+      <div class="form-group col-sm-4">
+        <label for="charName">Nome do Player</label>
+        <input type="name" class="form-control" id="playerName">
+      </div>
+       <div class="form-group col-sm-4">
+        <label for="charName">Nivel do personagem</label>
+        <input type="name" class="form-control" id="charLv">
+      </div>
+       <div class="form-group col-sm-4">
+        <label for="charName">Background</label>
+        <input type="name" class="form-control" id="charBackground">
+      </div>
+     </div>
+
+      <div  class="col-sm-1">
+        <div>
+            <p>Força</p>
+            <input type="name" class="form-control" id="charForce" value="1">
+          </div><br/>
+           <div>
+            <p>Força</p>
+            <input type="name" class="form-control" id="charDest" value="1">
+          </div><br/>
+           <div>
+            <p>Constituição</p>
+            <input type="name" class="form-control" id="charConst" value="1">
+          </div><br/>
+          <div>
+            <p>Inteligencia</p>
+            <input type="name" class="form-control" id="charInt" value="1">
+          </div><br/>
+          <div>
+            <p>Sabedoria</p>
+            <input type="name" class="form-control" id="charSab" value="1">
+          </div><br/>
+          <div>
+            <p>Carisma</p>
+            <input type="name" class="form-control" id="charCaris" value="1">
+          </div><br/>
+        <button class="btn btn-success" onclick="AlteraValorDoHidden()" style="width: 100%">
+          Gerar
+        </button>
+        </div>
+
+      </div>
+      
+
     
     <script>
       require('./renderer.js')
     </script>
   </body>
+
 </html>

@@ -7,31 +7,45 @@
 
     <title>D&D sheet generator</title>
     <script type="text/javascript">
-      function AlteraValorDoHidden(){
-        document.getElementById('charForce').value = Math.floor(Math.random() * (20) + 5);
-        document.getElementById('charDest').value = Math.floor(Math.random() * (20) + 5);
-        document.getElementById('charConst').value = Math.floor(Math.random() * (20) + 5);
-        document.getElementById('charInt').value = Math.floor(Math.random() * (20) + 5);
-        document.getElementById('charSab').value = Math.floor(Math.random() * (20) + 5);
-        document.getElementById('charCaris').value = Math.floor(Math.random() * (20) + 5);
-
-      }
       
       
     </script>
   </head>
   <body>
      <div class="row">
-      <div class="form-group col-sm-6">
+      <div class="form-group col-sm-4">
         <label for="charName">Nome do seu personagem</label>
         <input type="name" class="form-control" id="charName">
       </div>
-      <div class="form-group col-sm-6">
+      <div class="form-group col-sm-4">
          <label for="exampleFormControlSelect1">Selecione a classe</label>
          <select class="form-control" id="exampleFormControlSelect1">
-           <option>Mago</option>
+           <option>Bárbaro</option>
+           <option>Bardo</option>
+           <option>Bruxo</option>
+           <option>Clérigo</option>
+           <option>Druida</option>
+           <option>Feiticeiro</option>
            <option>Guerreiro</option>
            <option>Ladino</option>
+           <option>Mago</option>
+           <option>Monge</option>
+           <option>Paladino</option>
+           <option>Patrulheiro</option>
+         </select>
+      </div>
+      <div class="form-group col-sm-4">
+         <label for="exampleFormControlSelect1">Selecione a Raça</label>
+         <select class="form-control" id="exampleFormControlSelect1">
+           <option>Anão</option>
+           <option>Elfo</option>
+           <option>Halfling</option>
+           <option>Humano</option>
+           <option>Draconato</option>
+           <option>Gnomo</option>
+           <option>Meio-Elfo</option>
+           <option>Meio-Orc</option>
+           <option>Tiefling</option>
          </select>
       </div>
      </div>
@@ -57,7 +71,7 @@
             <input type="name" class="form-control" id="charForce" value="1">
           </div><br/>
            <div>
-            <p>Força</p>
+            <p>Destreza</p>
             <input type="name" class="form-control" id="charDest" value="1">
           </div><br/>
            <div>
@@ -83,11 +97,9 @@
 
       </div>
       
+    <script src="./functions/class.js" ></script>
+    <script src="./functions/func.js" ></script>
 
-    
-    <script>
-      require('./renderer.js')
-    </script>
   </body>
 
 </html>
